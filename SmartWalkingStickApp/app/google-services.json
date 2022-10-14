@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "724051767010",
+    "project_id": "smartwalkingstick-f5cee",
+    "storage_bucket": "smartwalkingstick-f5cee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724051767010:android:c12b7da2aa7023f7d8b8bb",
+        "android_client_info": {
+          "package_name": "com.pnu.smartwalkingstickapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724051767010-noelklcgf7afv0t3ssb9h9754a5lluho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcZNpVTnmbLxVUFQqxPoRLTtknkJ854yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724051767010-noelklcgf7afv0t3ssb9h9754a5lluho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

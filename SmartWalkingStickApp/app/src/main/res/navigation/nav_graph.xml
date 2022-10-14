@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_map_fragment">
+
+    <fragment
+        android:id="@+id/nav_map_fragment"
+        android:name="com.pnu.smartwalkingstickapp.ui.map_task.MapFragment"
+        android:label="MapFragment"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_nav_map_fragment_to_showDirectionFragment"
+            app:destination="@id/showDirectionFragment" />
+        <action
+            android:id="@+id/action_nav_map_fragment_to_nav_camera_x_fragment"
+            app:destination="@id/nav_camera_x_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_camera_x_fragment"
+        android:name="com.pnu.smartwalkingstickapp.ui.ocr_task.CameraXFragment"
+        android:label="CameraXFragment"
+        tools:layout="@layout/fragment_camera_x" />
+
+    <fragment
+        android:id="@+id/showDirectionFragment"
+        android:name="com.pnu.smartwalkingstickapp.ui.map_task.ShowDirectionFragment"
+        android:label="fragment_show_direction"
+        tools:layout="@layout/fragment_show_direction">
+        <argument
+            android:name="feature"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_showDirectionFragment_to_nav_camera_x_fragment"
+            app:destination="@id/nav_camera_x_fragment" />
+        <action
+            android:id="@+id/action_showDirectionFragment_to_nav_bluetooth_fragment"
+            app:destination="@id/nav_bluetooth_fragment" />
+        <action
+            android:id="@+id/action_showDirectionFragment_to_nav_map_fragment"
+            app:destination="@id/nav_map_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_bluetooth_fragment"
+        android:name="com.pnu.smartwalkingstickapp.ui.bluetooth.BluetoothFragment"
+        android:label="fragment_bluetooth"
+        tools:layout="@layout/fragment_bluetooth">
+        <action
+            android:id="@+id/action_nav_bluetooth_fragment_to_nav_camera_x_fragment"
+            app:destination="@id/nav_camera_x_fragment" />
+    </fragment>
+</navigation>
