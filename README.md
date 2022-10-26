@@ -27,6 +27,8 @@
 - 서보 모터를 활용한 방향 지시 기능
 - 모바일 어플리케이션과 연동을 위한 블루투스 기능과 버튼
 
+# 🧸️ 소개 영상
+[![33조 스마트 지팡이 시스템](http://img.youtube.com/vi/O67U1rhnIdc/0.jpg)](https://www.youtube.com/watch?v=O67U1rhnIdc)
 
 # 🧸️ 사용법
 **Android APK**
